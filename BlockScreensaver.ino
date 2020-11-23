@@ -15,12 +15,12 @@ void setup()
 void loop()
 {
   DigiMouse.moveY(MOUSE_MOVE_AMOUNT);
-  digitalWrite(0, LOW); // ON
+  digitalWrite(0, LOW); // LED OFF
   digitalWrite(1, LOW);
   DigiMouse.delay(100);
 
   DigiMouse.moveY(-1 * MOUSE_MOVE_AMOUNT);
-  digitalWrite(0, HIGH); // OFF
+  digitalWrite(0, HIGH); // LED ON
   digitalWrite(1, HIGH); 
   DigiMouse.delay(time_interval_ms);
 }
